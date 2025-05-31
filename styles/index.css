@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 414px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px 16px;
+    gap: 32px
+}
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.form-header h1 {
+    font-size: 24px;
+    color: #333;
+}   
+.form-header p {
+    font-size: 12px;
+    color: #545454;
+}   
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+form .form-intpu-text{
+    background-color: white;
+    color: #000;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+form .form-intpu-text::placeholder {
+    color: #DDDFE1;
+}
+form label {
+    font-size: 12px;
+    color: #545454;
+}
+form label::before {
+    content: "*";
+    color: red;
+}
+form .form-intpu-text:focus {
+    border-color: #3763E1;
+}
+
+button{
+    background-color: #3763E1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+button:hover {
+    background-color: #2c4bb8;
+    transition: .4s;
+}
+ .sing-in{
+    font-size: 12px;
+    color: #545454;
+    > a {
+        color: #3763E1;
+        text-decoration: none;
+    }
+}
